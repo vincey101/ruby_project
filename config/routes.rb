@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # API routes for Posts CRUD
-  resources :posts, except: [:new, :edit]
+  resources :posts, except: [ :new, :edit ]
 end
